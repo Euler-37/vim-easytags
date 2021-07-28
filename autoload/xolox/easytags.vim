@@ -731,6 +731,21 @@ if xolox#misc#option#get('easytags_include_members', 0)
         \ 'tagkinds': 'm'})
  highlight def link cMember Identifier
 endif
+"fortran"
+call xolox#easytags#define_tagkind({
+      \ 'filetype': 'fortran',
+      \ 'hlgroup': 'cFunction',
+      \ 'tagkinds': '[fpsM]'})
+call xolox#easytags#define_tagkind({
+      \ 'filetype': 'fortran',
+      \ 'hlgroup': 'fortranType',
+      \ 'tagkinds': '[cgtu]'})
+call xolox#easytags#define_tagkind({
+        \ 'filetype': 'fortran',
+        \ 'hlgroup': 'cMember',
+        \ 'tagkinds': 'm'})
+ highlight def link cMember Identifier
+
 
 " PHP. {{{2
 

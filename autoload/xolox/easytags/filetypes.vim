@@ -129,6 +129,8 @@ endfunction
 " types together and tells Exuberant Ctags to treat it all as C++ because C++
 " is a superset of C.
 call xolox#easytags#filetypes#add_group('cpp', 'c')
+"My add 
+call xolox#easytags#filetypes#add_group('fortran')
 call xolox#easytags#filetypes#add_group('html', 'htmldjango')
 
 " Define the default file type mappings.
